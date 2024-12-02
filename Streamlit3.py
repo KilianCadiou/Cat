@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from streamlit_authenticator import Authenticate
+import streamlit_authenticator as stauth
 from streamlit_option_menu import option_menu
 
 # Nos données utilisateurs doivent respecter ce format
