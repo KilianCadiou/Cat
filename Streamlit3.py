@@ -5,18 +5,21 @@ from streamlit_option_menu import option_menu
 
 # Nos données utilisateurs doivent respecter ce format
 
-lesDonneesDesComptes = {'usernames': {'utilisateur': {'name': 'utilisateur',
-   'password': 'utilisateurMDP',
-   'email': 'utilisateur@gmail.com',
-   'failed_login_attemps': 0, # Sera géré automatiquement
-   'logged_in': False, # Sera géré automatiquement
-   'role': 'utilisateur'},
-  'root': {'name': 'root',
-   'password': 'rootMDP',
-   'email': 'admin@gmail.com',
-   'failed_login_attemps': 0, # Sera géré automatiquement
-   'logged_in': False, # Sera géré automatiquement
-   'role': 'administrateur'}}}
+
+lesDonneesDesComptes = {'usernames':
+                        {'utilisateur': {'name': 'utilisateur',
+                        'password': 'utilisateurMDP',
+                        'email': 'utilisateur@gmail.com',
+                        'failed_login_attemps': 0, # Sera géré automatiquement
+                        'logged_in': False, # Sera géré automatiquement
+                        'role': 'utilisateur'},
+                        
+                        'root': {'name': 'root',
+                        'password': 'rootMDP',
+                        'email': 'admin@gmail.com',
+                        'failed_login_attemps': 0, # Sera géré automatiquement
+                        'logged_in': False, # Sera géré automatiquement
+                        'role': 'administrateur'}}}
 
 authenticator = Authenticate(
     lesDonneesDesComptes, # Les données des comptes
